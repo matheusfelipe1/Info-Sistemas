@@ -1,0 +1,23 @@
+.home {
+    background-color: #fff;
+    color: #000;
+  
+}
+.title {
+    font-size: 60px;
+    padding-top: 40px;
+}
+
+.subtitle{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    font-size: 40px;
+}
+.p {
+    padding: 40px;
+    font-size: 23px;
+}
+.home2{
+    margin-top: 17px;
+}
+

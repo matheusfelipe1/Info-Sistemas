@@ -1,0 +1,12 @@
+.start{
+    color: yellow;
+    vertical-align: middle;
+}
+
+.footer {
+    background-color: #777;
+    position: fixed;
+    bottom: 0;
+    max-height: 50px;
+    justify-content: flex-end;
+}

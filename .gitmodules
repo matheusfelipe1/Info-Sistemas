@@ -1,0 +1,3 @@
+[submodule "processoseletivo"]
+	path = processoseletivo
+	url = ./processoseletivo

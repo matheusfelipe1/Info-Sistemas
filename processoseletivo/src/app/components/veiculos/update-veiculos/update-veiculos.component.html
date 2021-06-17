@@ -1,0 +1,48 @@
+<mat-card class="form-card mat-elevation-z3">
+    <mat-card-title class=" title">Alterar dados do Veículo</mat-card-title>
+    <mat-card-subtitle class=" subtitle">Altere os dados do veículo nos campos abaixo.</mat-card-subtitle>
+    <form>
+        <mat-form-field >
+            <mat-label >Marca</mat-label>
+            <input matInput placeholder="Informe a marca"
+            [(ngModel)]="veiculo.marca" name="marca"/>
+        </mat-form-field>
+        <mat-form-field >
+            <mat-label >Modelo</mat-label>
+            <input matInput placeholder="Informe o modelo do veículo"
+            [(ngModel)]="veiculo.modelo" name="modelo"/>
+        </mat-form-field>
+        <mat-form-field >
+            <mat-label >Ano</mat-label>
+            <input matInput placeholder="Informe o ano"
+            [(ngModel)]="veiculo.ano" name="ano"/>
+        </mat-form-field>
+        <mat-form-field >
+            <mat-label >Placa</mat-label>
+            <input matInput placeholder="Informe  a placa" class="input"
+            [(ngModel)]="veiculo.placa" name="placa"/>
+        </mat-form-field>
+        <mat-form-field >
+            <mat-label >Renavam</mat-label>
+            <input matInput placeholder="Informe o seu Renavam"
+            [(ngModel)]="veiculo.renavam" name="renavam"/>
+        </mat-form-field>
+        <mat-form-field >
+            <mat-label >Chassi</mat-label>
+            <input matInput placeholder="Informe seu Chassi"
+            [(ngModel)]="veiculo.chassi" name="chassi"/>
+        </mat-form-field>
+    </form>
+    <button class="salvar" mat-raised-button (click)="update()">Salvar</button>
+    <button class="cancelar" mat-raised-button (click)="cancelar()">Cancelar</button>
+
+</mat-card>
+
+<!--
+    aqui nesta tela fazemos nossa imerssão dos dados do frontend para o backend
+    e eu usei os names e ngModel para que nos inputs se iniciassem com os valores pré-preenchidos
+    que for requisitado no getById , assim quando o usuário for alterar algum dado e não todos,
+    ele irá diretamente no campo deseja e fazer a alteração e assim facilitando a usabilidade do
+    usuário no sistema.
+-->
+

@@ -1,0 +1,49 @@
+<mat-card class="form-card mat-elevation-z3">
+    <mat-card-title class=" title">Novo Veículo</mat-card-title>
+    <mat-card-subtitle class=" subtitle">Informe os dados do veículo nos campos abaixo.</mat-card-subtitle>
+    <form>
+        <mat-form-field >
+            <mat-label >Marca</mat-label>
+            <input matInput placeholder="Informe a marca"
+            [(ngModel)]="veiculos.marca" name="marca"/>
+        </mat-form-field>
+        <mat-form-field >
+            <mat-label >Modelo</mat-label>
+            <input matInput placeholder="Informe o modelo do veículo"
+            [(ngModel)]="veiculos.modelo" name="modelo"/>
+        </mat-form-field>
+        <mat-form-field >
+            <mat-label >Ano</mat-label>
+            <input matInput placeholder="Informe o ano"
+            [(ngModel)]="veiculos.ano" name="ano"/>
+        </mat-form-field>
+        <mat-form-field >
+            <mat-label >Placa</mat-label>
+            <input matInput placeholder="Informe  a placa" class="input"
+            [(ngModel)]="veiculos.placa" name="placa"/>
+        </mat-form-field>
+        <mat-form-field >
+            <mat-label >Renavam</mat-label>
+            <input matInput placeholder="Informe o seu Renavam"
+            [(ngModel)]="veiculos.renavam" name="renavam"/>
+        </mat-form-field>
+        <mat-form-field >
+            <mat-label >Chassi</mat-label>
+            <input matInput placeholder="Informe seu Chassi"
+            [(ngModel)]="veiculos.chassi" name="chassi"/>
+        </mat-form-field>
+    </form>
+    <button class="salver mat-elevation-z5" mat-raised-button (click)="createVeiculos()">
+        Salvar
+    </button>
+    <button class="cancelar mat-elevation-z5" mat-raised-button (click)="cancelarVeiculo()">
+        Cancelar
+    </button>
+</mat-card>
+
+
+
+<!--
+    aqui nesta tela fazemos nossa imerssão dos dados do frontend para o backend o nosso
+    próprio create , através desta função que iremos mandar as requisições para o backend.
+-->

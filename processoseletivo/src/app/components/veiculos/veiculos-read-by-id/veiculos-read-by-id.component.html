@@ -1,0 +1,10 @@
+<mat-card class="mat-elevation-z8" ([ngModel])="veiculo">
+    <mat-card-title> {{ veiculo.marca }} {{ veiculo.modelo }}  </mat-card-title>
+    <mat-card-subtitle>Ano: {{veiculo.ano  }}</mat-card-subtitle>
+    <mat-card-subtitle>Placa: {{veiculo.placa  }}</mat-card-subtitle>
+    <mat-card-subtitle>Renavam: {{veiculo.renavam  }}</mat-card-subtitle>
+    <mat-card-subtitle>Chassi: {{veiculo.chassi  }}</mat-card-subtitle>
+    <mat-card-subtitle>Número de inscrição: {{veiculo.id  }}</mat-card-subtitle>
+    <button mat-raised-button class="update" (click)="update(veiculo.id)">Atualizar</button>
+    <button mat-raised-button class="delete" (click)="remove(veiculo.id)">Excluir</button>
+</mat-card>

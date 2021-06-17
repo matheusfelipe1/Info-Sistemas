@@ -1,0 +1,25 @@
+mat-card-title {
+    padding-bottom: 10px;
+    font-size: 40px;
+    padding: 15px;
+}
+
+mat-card-subtitle {
+    font-size: 17px;
+    padding: 7px;
+    color: #000;
+}
+
+mat-card {
+    background-color: #fff;
+    color: #000;
+}
+
+.update {
+    background-color:lightseagreen;
+}
+
+.delete {
+    background-color: red;
+    margin-left: 27px;
+}

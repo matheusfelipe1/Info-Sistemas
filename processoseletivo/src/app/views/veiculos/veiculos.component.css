@@ -1,0 +1,9 @@
+.index {
+    background-color: #fff;
+    color: #000;
+    margin-bottom: 8px ;
+}
+
+.index > button {
+    background-color: #3f51b5;
+}

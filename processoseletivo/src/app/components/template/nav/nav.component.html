@@ -1,0 +1,31 @@
+<mat-sidenav-container class="container">
+        <mat-sidenav class="sidenav" mode="side"
+             opened fixedInViewport fixedTopGap="100">
+                <mat-nav-list class="nav-list">
+                    <a routerLink="/" mat-list-item>
+                        <i class="material-icons">
+                            home
+                        </i>
+                        Home
+                    </a>
+                    <a routerLink="/veiculos" mat-list-item>
+                        <i class="material-icons">
+                            directions_car
+                        </i>
+                        Veículos
+                    </a>
+                </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content class="content">
+           <router-outlet></router-outlet>
+        </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!--
+    Aqui contem a navegação através dos ícones, mas também contém o 
+    router que seria nossas rotas de renderização do componente material no
+    contexto da página, o que quero dizer é que 
+    no router contem nossos components e nossos path, assim através dos routerLink
+    navegamos entre nossos path e consequentemente renderizamos o nosso
+    component que pertence a esse path setado dentro do nosso mat-sidenav-content
+-->
